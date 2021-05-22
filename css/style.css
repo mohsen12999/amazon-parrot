@@ -20,3 +20,16 @@
 * {
   font-family: "Yekan" !important;
 }
+
+.nav.text-white .nav-link,
+.nav.text-white .nav-link.active {
+  color: #fff;
+}
+
+.nav.text-white:hover .nav-link {
+  opacity: 0.5;
+}
+
+.nav.text-white .nav-link:hover {
+  opacity: 1;
+}
