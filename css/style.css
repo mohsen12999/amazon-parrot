@@ -33,3 +33,7 @@
 .nav.text-white .nav-link:hover {
   opacity: 1;
 }
+
+main {
+  min-height: calc(100vh - 208px);
+}
