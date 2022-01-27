@@ -26,7 +26,7 @@ class HomeController extends Controller
         $menu = 'about';
         $title = 'درباره ما';
 
-        return view('home.about');
+        return view('home.about', compact('menu','title'));
     }
 
     public function blogs()
@@ -35,7 +35,7 @@ class HomeController extends Controller
         $menu = 'blogs';
         $title = 'مقالات';
 
-        return view('home.blogs');
+        return view('home.blogs', compact('menu','title'));
     }
 
     public function blog($id)
@@ -44,7 +44,7 @@ class HomeController extends Controller
         $menu = 'blog';
         $title = '';
 
-        return view('home.blog');
+        return view('home.blog', compact('menu','title'));
     }
 
     public function gallery()
@@ -53,6 +53,6 @@ class HomeController extends Controller
         $menu = 'gallery';
         $title = 'گالری';
 
-        return view('home.gallery');
+        return view('home.gallery', compact('menu','title'));
     }
 }
