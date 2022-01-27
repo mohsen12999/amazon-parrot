@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Slider;
+use App\Models\Post;
 
 class HomeController extends Controller
 {
@@ -12,7 +14,10 @@ class HomeController extends Controller
         $menu = 'index';
         $title = 'صفحه اصلی';
 
-        return view('home.index');
+        $sliders = Slider::all();
+        $posts = Post::orderBy('id', 'desc')->take(4)->get();
+
+        return view('home.index', compact('menu','title','sliders','posts'));
     }
 
     public function about()
