@@ -37,3 +37,7 @@
 main {
   min-height: calc(100vh - 208px);
 }
+
+.text-justify{
+  text-align: justify;
+}
