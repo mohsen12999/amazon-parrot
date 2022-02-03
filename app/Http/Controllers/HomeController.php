@@ -36,7 +36,9 @@ class HomeController extends Controller
         $menu = 'blogs';
         $title = 'مقالات';
 
-        return view('home.blogs', compact('menu','title'));
+        $posts = Post::orderBy('id', 'desc')->get();
+
+        return view('home.blogs', compact('menu','title','posts'));
     }
 
     public function blog($id)
