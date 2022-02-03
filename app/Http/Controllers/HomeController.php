@@ -45,9 +45,11 @@ class HomeController extends Controller
     {
         //
         $menu = 'blog';
-        $title = '';
 
-        return view('home.blog', compact('menu','title'));
+        $post = Post::find($id);
+        $title = $post->title;
+
+        return view('home.blog', compact('menu','title','post'));
     }
 
     public function gallery()
