@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Slider;
 use App\Models\Post;
+use App\Models\Image;
 
 class HomeController extends Controller
 {
@@ -53,6 +54,8 @@ class HomeController extends Controller
         $menu = 'gallery';
         $title = 'گالری';
 
-        return view('home.gallery', compact('menu','title'));
+        $images = Image::all();
+
+        return view('home.gallery', compact('menu','title','images'));
     }
 }
