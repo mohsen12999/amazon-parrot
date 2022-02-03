@@ -59,7 +59,7 @@
                   >amazon_parot
                   <img
                     width="21"
-                    src="img/icons/Instagram_logo.png"
+                    src="{{ asset('img/icons/Instagram_logo.png') }}"
                     alt="Instagram "
                 /></a>
               </li>
@@ -121,7 +121,7 @@
                   >amazon_parot
                   <img
                     width="21"
-                    src="img/icons/Instagram_logo.png"
+                    src="{{ asset('img/icons/Instagram_logo.png') }}"
                     alt="Instagram "
                 /></a>
               </li>
