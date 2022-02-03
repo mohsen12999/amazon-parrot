@@ -5,6 +5,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <meta name="description" content="هایپر پرنده آمازون، خرید و فروش انواع طوطی و پرندگان تزئینی, خرگوش و همستر, انواع قفس, خوراک, دانه و داروها و سایز امکانات">
+    <meta name="keywords" content="خرید پرنده, خرید طوطی, خرید و فروش پرنده در تنکابن, خرید و فروش پرنده در شهسوار, خرید قفس, خرید دانه, خرید خرگوش, خرید همستر, خرید بلبل, خرید فنچ, خرید مینا, خرید مرغ مینا">
+
+    <meta property="og:title" content="هایپر پرنده آمازون">
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="هایپر پرنده آمازون، خرید و فروش انواع طوطی و پرندگان تزئینی, خرگوش و همستر, انواع قفس, خوراک, دانه و داروها و سایز امکانات">
+    <meta property="og:image" content="{{ asset('img/Cockatiels-Preening.jpg') }}">
+    <meta property="og:url" content="{{ url('/') }}">
+    <meta name="twitter:card" content="هایپر پرنده آمازون">
+
+
     <!-- Bootstrap CSS -->
     <link href="{{ asset('lib/bootstrap/css/bootstrap.rtl.min.css') }}" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
