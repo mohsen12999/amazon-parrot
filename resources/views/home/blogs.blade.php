@@ -24,7 +24,7 @@
               <div class="col-md-4">
                 <img
                   src="{{ asset('img/posts/'.$post->pic) }}"
-                  alt="bird-cage"
+                  alt="{{ $post->title }}"
                   class="d-block w-100"
                 />
               </div>
